@@ -1,0 +1,268 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+:root{
+    --background-darck: #222;
+    --background-white: rgb(230, 229, 229);
+    --card-border-raduis: 5px;
+    --box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 0px;
+    margin: 0 17px;
+    transition: all 0.3s ease-in-out;
+}
+body{
+    color: var(--background-darck);
+    padding-top: 50px;
+    background-color: #222;
+    transition: all 0.9s smooth;
+}
+
+.nav{
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.nav .contianer{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    transition: all 0.3s ease;
+}
+.nav .contianer ul{
+    display: flex;
+    gap: 20px;
+}
+/* ---------    javaScript  -------------- */
+.nav.active {
+    background-color: var(--secondary-color);
+}
+
+
+/* --------------- */
+.hero{
+    height: 100vh;
+    /* background: url('https://w0.peakpx.com/wallpaper/246/890/HD-wallpaper-road-between-green-trees-forest-under-white-clouds-sky-8k-nature.jpg') no-repeat; */
+    background: url('/images/nature-landscape-trees-digital-art-wallpaper-thumb.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: bottom center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 10px;
+    z-index: -2;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.hero h1{
+    font-size: 50px;
+    margin: -20px 0 10px;
+}
+.hero p{
+    line-height: 40px;
+    max-width: 700px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    text-align: left;
+}
+.hero .img{
+    position: absolute;
+    background: url("/my_picture-removebg.png");
+    width: 500px;
+    background-color: black;
+}
+.skills{
+    color: crimson;
+    font-weight: 700;
+}
+.prodcuts,
+.content-contianer{
+    max-width: 1200px;
+}
+.content-contianer .projects{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 100px;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    padding: 30px 0;
+    position: relative;
+}
+.content-contianer .title{
+    margin: 0 auto;
+    color: white;
+    padding: 20px 0;
+}
+.content-contianer .projects > .content{
+    background-color: rgb(192, 192, 192);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    height: max-content;
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+    min-height: 300px;
+}
+.content-contianer .projects > .content:hover{
+    box-shadow: none;
+    transform: scale(1.1);
+
+}
+.prodcuts{
+    height: 100vh;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    height: 100vh;
+}
+.prodcuts .content{
+    background-color: rgb(192, 192, 192);
+    padding: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    height: max-content;
+    width: 350px;
+    transition: all 0.9s ease-in-out;
+}
+.info{
+    padding: 10px;
+}
+.content img{
+    width: 100%;
+    height: 200px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.about-section{
+    height: 60vh;
+    max-width: 1200px;
+    color: white;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.about-section .info-1,
+.about-section .info-2{
+    padding: 20px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+.about-section > div{
+    height: calc(100% / 2);
+    width: 50%;
+    text-align: center;
+}
+.about-section > div h1{
+    margin-top: 50px;
+}
+
+.active{
+    border-bottom: 2px solid black;
+}
+.contact-section{
+    max-width: 1200px;
+    height: 70vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.contact-section input{
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    outline: 1px var(--primary-color);
+    background-color: white;
+}
+.contact-section textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    outline: none;
+    padding: 20px 0 0 20px;
+    font-size: 17px;
+}
+.contact-section input[type="submit"]{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+}
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--secondary-color);
+
+}
+footer .content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer .content .links{
+    display: flex;
+    width: 100%;
+}
+footer .content .links ul{
+    width: 50%;
+}
+footer .content .links ul li{
+    padding: 10px;
+}
+footer .content .copyright{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}

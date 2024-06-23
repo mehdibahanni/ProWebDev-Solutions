@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمة التعليق الصوتي</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #fff;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            margin-bottom: 50px;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.5em;
+        }
+        .audio-samples {
+            margin: 50px 0;
+        }
+        .audio-samples h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .audio-sample {
+            margin-bottom: 20px;
+        }
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .social-icons {
+            margin-top: 30px;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 30px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #00aced;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .fadeIn {
+            animation: fadeIn 2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="container fadeIn">
+        <div class="header">
+            <h1>مرحبًا بك في خدمة التعليق الصوتي</h1>
+            <p>نحن نقدم خدمات التعليق الصوتي الاحترافية لجميع أنواع المشاريع. استمع إلى بعض العينات الصوتية أدناه.</p>
+        </div>
+
+        <div class="audio-samples">
+            <h2>عينات صوتية</h2>
+            <div class="audio-sample">
+                <audio controls>
+                    <source src="sample1.mp3" type="audio/mp3">
+                    متصفحك لا يدعم مشغل الصوت.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <audio controls>
+                    <source src="sample2.mp3" type="audio/mp3">
+                    متصفحك لا يدعم مشغل الصوت.
+                </audio>
+            </div>
+            <div class="audio-sample">
+                <audio controls>
+                    <source src="sample3.mp3" type="audio/mp3">
+                    متصفحك لا يدعم مشغل الصوت.
+                </audio>
+            </div>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </div>
+        
+        <footer>
+            &copy; 2024 خدمة التعليق الصوتي. جميع الحقوق محفوظة.
+        </footer>
+    </div>
+</body>
+</html>

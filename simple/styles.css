@@ -1,0 +1,211 @@
+/*
+الخطوط
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+الألوان
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #333;
+}
+
+تنسيق الرأس والتنقل
+header {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+الأقسام
+section {
+    padding: 2em;
+    margin: 2em 0;
+    background: var(--background-color);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+نموذج الاتصال
+التذييل
+footer {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+تجاوب التصميم
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+*/
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #ecf0f1;
+    --alert-color: #e74c3c;
+    --success-color: #2ecc71;
+    --highlight-color: #f1c40f;
+    --text-color: #333;
+}
+form {
+    display: grid;
+    grid-gap: 1em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* الجسم */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* الرأس والتنقل */
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* الأزرار */
+button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--primary-color);
+}
+
+/* الإشعارات */
+.alert {
+    background: var(--alert-color);
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+.success {
+    background: var(--success-color);
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    margin: 1em 0;
+}
+
+/* تسليط الضوء */
+.highlight {
+    background: var(--highlight-color);
+    color: var(--primary-color);
+    padding: 0.5em;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* الأقسام */
+section {
+    padding: 2em;
+    margin: 2em 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+/* التذييل */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* تجاوب التصميم */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
