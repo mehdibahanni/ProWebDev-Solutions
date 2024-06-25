@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1d1c1c;
+}
+.container-panel{
+    width: 700px;
+    background-color: #1d1c1c;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 90%;
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+strong{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.contianer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+}
+.rating-container{
+    display: flex;
+    margin: 10px 0;
+}
+.rate{
+    padding: 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+}
+.rate:hover,
+.rate.active{
+    background-color: #fff;
+    color: black;
+    transition: 0.9s ease;
+}
+.rate .icon{
+    width: 40px;
+    font-size: 4rem;
+    margin-right: 10px;
+    rotate: 90deg;
+    width: 100%;
+}
+.rate small{
+    font-size: 17px;
+    display: inline-block;
+    margin: 10px 0 0;
+}
+.btn{
+    background-color: #fff;
+    color: #000;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+    outline: 0;
+}
+.btn.active{
+    transform: scale(0.98);
+}
+.heart{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
