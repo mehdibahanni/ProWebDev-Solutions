@@ -17,7 +17,6 @@ html{
     --secondary-color: #2c3e50;
     --background-color: #ecf0f1;
     --text-color: #333;
-    --background-image: url('/images/code-background.jpg') no-repeat center center fixed;
 }
 a{
     text-decoration: none;
@@ -61,13 +60,16 @@ body{
 
 /* --------------- */
 .hero{
-    background: var(--background-image);
+    background-image: url('https://github.com/mehdibahanni/ProWebDev-Solutions/raw/master/images/code-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* أي خصائص أخرى للخلفية إذا لزم الأمر */
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     position: relative;
     z-index: -2;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.7);
