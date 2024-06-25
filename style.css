@@ -17,7 +17,7 @@ html{
     --secondary-color: #2c3e50;
     --background-color: #ecf0f1;
     --text-color: #333;
-    --background-image: url('/images/code-background.jpg') no-repeat center center fixed;
+    --background-image: url('https://github.com/mehdibahanni/ProWebDev-Solutions/blob/master/images/code-background.jpg?raw=true') no-repeat center center fixed;
 }
 a{
     text-decoration: none;
