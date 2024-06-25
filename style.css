@@ -61,7 +61,11 @@ body{
 
 /* --------------- */
 .hero{
-    background: var(--background-image);
+    background-image: url('https://github.com/mehdibahanni/ProWebDev-Solutions/raw/master/images/code-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    /* أي خصائص أخرى للخلفية إذا لزم الأمر */
     background-size: cover;
     display: flex;
     justify-content: center;
